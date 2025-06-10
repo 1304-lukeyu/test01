@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <!--
 Infographic about student AI usage and ethics.
 This file provides a visual summary of a student's joint research report.
@@ -10,7 +10,9 @@ All styling and scripts are embedded within this single HTML file.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>생성형 AI 사용 실태 조사 보고서 인포그래픽</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         /* Custom CSS */
@@ -90,7 +92,7 @@ All styling and scripts are embedded within this single HTML file.
                     <div>
                         <h3 class="text-xl font-semibold text-secondary-teal mb-2">조사 동기</h3>
                         <p class="text-lg leading-relaxed">
-                            최근 생성형 AI의 급격한 발전으로 학생들 사이에서 과제나 공부에 이를 활용하는 사례가 증가했다. ChatGPT, 번역 AI 등 다양한 도구의 등장으로 활용 범위가 넓어졌다. 그러나 생성형 AI 사용 방식에 따라 비도덕적인 사용이 발생할 수 있다는 우려가 존재했다. 이에 따라 학생들이 실제로 AI를 어떻게 사용하고 있으며, 그 과정에서 윤리적인 문제가 없는지 실태를 조사할 필요가 있다고 판단했다.
+                            최근 생성형 AI의 급격한 발전으로 학생들 사이에서 과제나 공부에 이를 활용하는 사례가 증가했다. ChatGPT, 번역 AI 등 다양한 도구가 등장함에 따라 활용 범위도 넓어졌다. 그러나 생성형 AI 사용 방식에 따라 비도덕적인 사용이 발생할 수 있다는 우려가 존재했다. 이에 따라 학생들이 실제로 AI를 어떻게 사용하고 있으며, 그 과정에서 윤리적인 문제는 없는지 실태를 조사할 필요가 있다고 판단했다.
                         </p>
                     </div>
                     <div>
@@ -133,6 +135,7 @@ All styling and scripts are embedded within this single HTML file.
                             AI를 사용하여 학교 과제를 해 본 경험이 있다면, 어떤 과목에서 사용했는지 모두 선택해주세요.
                             <br>응답 결과, 영어와 성직 과목에서 AI 사용률이 가장 높았다. 역사와 프로그래밍에서도 절반에 가까운 학생들이 AI를 활용한 경험이 있었다.
                         </p>
+                        <!-- Chart Container for Subjects Used AI -->
                         <div class="chart-container w-full max-w-lg mx-auto">
                             <canvas id="subjectUsageChart"></canvas>
                         </div>
@@ -144,6 +147,7 @@ All styling and scripts are embedded within this single HTML file.
                             과제를 할 때, AI로 생성된 결과물을 본인의 창작물이라고 제시한 경험에 대해 가장 가깝게 답해주세요.
                             <br>설문 응답을 통해 다수의 학생들이 AI가 생성한 결과물을 자신의 창작물로 제시한 경험이 거의 없거나 전혀 없다고 응답했다.
                         </p>
+                        <!-- Chart Container for AI Output Submission Experience -->
                         <div class="chart-container w-full max-w-sm mx-auto h-72 md:h-80 lg:h-96">
                             <canvas id="submissionExperienceChart"></canvas>
                         </div>
@@ -155,9 +159,17 @@ All styling and scripts are embedded within this single HTML file.
                             과제를 할 때 AI 도구(예: ChatGPT, 글쓰기/번역 AI 등)를 사용하는 경우, 평균적으로 AI 도구를 사용하는 시간은 어느 정도입니까?
                             <br>응답자 대부분이 30분 이내 혹은 1시간 미만으로 AI 도구를 사용했으며, 2시간 이상 사용하는 경우는 전혀 없었다.
                         </p>
+                        <!-- Chart Container for AI Tool Usage Time -->
                         <div class="chart-container w-full max-w-lg mx-auto">
                             <canvas id="usageTimeChart"></canvas>
                         </div>
+                        <!-- Image: AI tool usage time screenshot -->
+                        <img src="https://placehold.co/600x400/E0F2FE/263238?text=AI+Usage+Time+Screenshot" alt="AI 도구 사용 시간 스크린샷"
+                             class="w-full max-w-lg mx-auto my-6 rounded-lg shadow-md"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0F2FE/263238?text=Image+Not+Found'">
+                        <p class="text-center text-accent-grey text-sm mt-2">
+                            (참고: 위 이미지는 Placeholder이며, 실제 스크린샷 URL로 대체해야 합니다. 로컬 파일 경로는 웹에서 직접 로드할 수 없습니다.)
+                        </p>
                     </div>
                 </div>
 
@@ -188,6 +200,13 @@ All styling and scripts are embedded within this single HTML file.
 
             <section class="card mb-10 p-8">
                 <h2 class="text-3xl font-bold text-primary-blue mb-4 border-b-2 border-secondary-teal pb-2">4. 결론 및 제언</h2>
+                <!-- Image: Conclusion and Suggestions screenshot -->
+                <img src="https://placehold.co/800x500/E0F2FE/263238?text=Conclusion+Screenshot" alt="결론 및 제언 스크린샷"
+                     class="w-full max-w-xl mx-auto my-6 rounded-lg shadow-md"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x500/E0F2FE/263238?text=Image+Not+Found'">
+                <p class="text-center text-accent-grey text-sm mt-2 mb-6">
+                    (참고: 위 이미지는 Placeholder이며, 실제 스크린샷 URL로 대체해야 합니다. 로컬 파일 경로는 웹에서 직접 로드할 수 없습니다.)
+                </p>
 
                 <h3 class="text-2xl font-bold text-secondary-teal mb-4">가. 조사 결과 종합 및 주요 발견점</h3>
                 <ul class="list-disc list-inside space-y-3 mb-6 text-lg">
